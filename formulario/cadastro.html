@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- <script type="text/javascript" src="js/script.js"></script>-->
+    
+    <title>Formulario</title>
+</head>
+<body>
+    
+    <div>
+        <h1 id="titulo">Cadastro de Usuario</h1>
+            <p id="subtitulo"><strong>Complete suas informações</strong></p>
+            <br>
+    </div>
+
+    <form action="">
+        <fieldset class="grupo">
+            <legend><strong>Dados do Usuario</strong></legend>
+            <div>
+                <label for="cNome"><strong><p>Nome</strong></label><input type="text" name="tNome" id="cNome" size="20" maxlength="20" placeholder="Seu nome" required></p>
+            </div>
+
+            <div class="campo" id="sobrenome">
+                <label for="cSobrenome"><strong><p>Sobrenome</strong></label><input type="text" name="tSobrenome" id="cSobrenome" size="20" maxlength="20" placeholder="Seu sobrenome" required></p>
+            </div>
+
+            <div class="senha">
+                <label for="cSenha"><strong><p>Senha</strong></label><input type="password" name="tSenha" id="cSenha" size="20" maxlength="20" placeholder="Sua senha" required></p>
+            </div>
+
+            <div>
+                <fieldset>
+                    <label for="cMasc"><input type="radio" name="tRadio" id="cMasc" required checked><strong>masculino</strong></label>
+                <label for="cFem"><input type="radio" name="tRadio" id="cFem" required><strong>feminino</strong></label>
+                </fieldset>
+            </div>
+
+            <div>
+                <label for="cNasc"><strong><p>Data de Nascimento</strong><input type="date" name="tNasc" id="cNasc" required></label></p>
+            </div>
+
+            <div class="campo">
+                <label for=""><strong><p>Email</strong></label><input type="email" name="tEmail" id="cEmail" size="20" maxlength="20" placeholder="Seu email" required></p>
+            </div>
+        </fieldset>
+
+        <br>
+
+       <fieldset class="campo">
+            <legend><strong>De qual lado da aplicação você desenvolve?</strong></legend>
+           <div>
+                <label for="cFrontend"><input type="radio" name="tDevweb" id="cFrontend" required><strong>front-End</strong></label>
+            </div>
+
+            <div>
+                <label for="cBackend"><input type="radio" name="tDevweb" id="cBackend" required><strong>Back-End</strong></label>
+            </div>
+
+            <div>
+                <label for="cFullstack"><input type="radio" name="tDevweb" id="cFullstack" required><strong>Full Stack</strong></label>
+            </div>
+       </fieldset>
+       
+       <fieldset>
+           <legend><strong>Senioridade</strong></legend>
+           <div class="campo">
+                <select name="tSenioridade" id="cSenioridade" required>
+                    <option value="" disabled selected>Escolha uma opção...</option>
+                    <option value="JR">Junior</option>
+                    <option value="PL">Pleno</option>
+                    <option value="SR">Senior</option>
+                </select>
+           </div>
+       </fieldset>
+
+       <fieldset class="grupo">  
+           <legend><strong>Selecione as tecnologias que você utiliza:</strong></legend>
+                <div>
+                    <input type="checkbox" name="tPhp" id="cPhp"><label for="cPhp">php</label>
+                    <input type="checkbox" name="tJava" id="cJava"><label for="cJava">java</label>
+                    <input type="checkbox" name="tPython" id="cPython"><label for="cPython">python</label>
+                    <input type="checkbox" name="tC#" id="cC#"><label for="cC#">c#</label>
+                    <input type="checkbox" name="tRuby" id="cRuby"><label for="cRuby">ruby</label>
+                    <input type="checkbox" name="tC++" id="cC++"><label for="cC++">c++</label>
+                    <input type="checkbox" name="tC" id="cC"><label for="cC">c</label>
+                </div>
+       </fieldset>
+        <div class="campo">
+                <strong><p><label for="cMsg">Fale sobre você! </label></strong><textarea name="tMsg" id="cMsg" cols="50" rows="10" placeholder="Fale sobre voce"></textarea></p>
+        </div>
+       <button class="botao" type="submit">Concluido</button>
+    </form>
+</body>
+</html>

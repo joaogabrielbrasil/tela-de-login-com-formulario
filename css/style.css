@@ -1,0 +1,57 @@
+/* Essa estilização é para a pagina index.html */
+
+.telalogin {
+    background:LightGrey;
+    width:400px;
+    height:350px;
+    padding-top:50px;
+    text-align:center;
+    margin-top:220px;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+.logar {
+    background:DeepSkyBlue;
+    margin-left:110px;
+    margin-right:110px;
+}
+
+.cadastro {
+            background:Chartreuse;
+            height:70px;
+            text-align:right;
+}
+
+input:focus {
+    background:#E0E0F8;
+}
+
+input {
+    border-radius: 5px;
+}
+
+button {
+    border-radius: 5px;
+}
+
+.telalogin, .cadastro {
+    border-radius: 20px;
+}
+
+button:hover {
+    background: #ccbbff;
+    box-shadow: inset 2px 2px 2px rgb(0,0,0,0.2);
+    text-shadow: none;
+}
+
+.logar:hover {
+    background: #ccbbff;
+    box-shadow: inset 2px 2px 2px rgb(0,0,0,0.2);
+    text-shadow: none;
+}
+
+.logar {
+    border-radius: 5px;
+}
+
